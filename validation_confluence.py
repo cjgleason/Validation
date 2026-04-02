@@ -949,7 +949,7 @@ def run_validation():
     if sos_bucket:
         gage_dir = TMP_DIR
     else:
-        gage_dir = INPUT_DIR.joinpath("sos")
+        gage_dir = INPUT.joinpath("sos")
 
     vc = ValidationConfluence(reach_data, FLPE, MOI, OFFLINE, INPUT, OUTPUT, run_type, gage_dir)
     vc.validate()
